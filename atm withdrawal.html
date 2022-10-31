@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-transform: uppercase;">
+    <style >
+        .atm{
+            background-image: url(./../../GitHub/javascript/pic.jfif);
+            align-items: center;
+    </style>
+    <center>
+ <section  class="atm" style="background-size:100% 100%;height:1000px">
+<div class="container-fluid" style="background-color:rgba(0,0,0,.6);height:1000px">
+	<div class="row">
+		<div>
+			<h2 style="font-size: 50px;">Make cash widthdraw</h2><br />
+			<input type="number" id ="amount" style="height:35px;font-size:20px;background-color:cyan;border:none;width:300px" placeholder="Enter amount for widthdraw"/><br />
+       <button class="btn bg-primary mt-3" onclick="cash()" >withdraw cash</button>
+		 <div  style="width:250px; height:200px">
+		 <h2 id="with" style="color: white; opacity:1;" >hello sir</h2>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3uNmuIWvOc9CahFrv0y771cESemy76KBvFg&usqp=CAU" alt="ATMs" id="change" height="100%" width="100%"/>
+		 </div>
+           <div>
+        
+			</div>
+		</div>
+	</div>
+</center>
+    <script>
+        function cash(){
+	 <!-- alert("hello"); -->
+
+var j=document.getElementById("amount").value;
+if(j<100){
+ document.getElementById("with").innerHTML="take your cash";
+ document.getElementById("change").src="https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2021/06/12/943173-untitled-design-68.png";
+}
+else if(j<500){
+	document.getElementById("with").innerHTML="take your cash ";
+	document.getElementById("change").src="https://nmgprod.s3.amazonaws.com/media/files/45/08/45088d4862f2aa7405bd4d5bc227bb21/cover_image_1591366688.jpg.760x400_q85_crop_upscale.jpg";
+}
+else if(j<2000){
+	document.getElementById("with").innerHTML="take your cash";
+	document.getElementById("change").src="https://s31898.pcdn.co/wp-content/uploads/2019/07/Avail-instant-cash-e1562665351818-800x430.jpg";
+}
+else{
+	document.getElementById("with").innerHTML="sorry your account has insufficient balance";
+		document.getElementById("change").src="https://voicesofglass.files.wordpress.com/2012/01/atminsuff.png";
+}
+}
+ </script>
+    
+</body>
+</html>

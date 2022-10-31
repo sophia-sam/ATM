@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./atm withdrawal.html" id="redirect">
+    <input style="height:35px;font-size:20px;background-color:cyan;border:none;width:300px" id="pin" type="number" placeholder="Input pin"><br>
+    <submit>submit</submit><br>
+    <input type="submit" value="SUBMIT">
+ </form> 
+</body>
+<script>
+    var pin=document.getElementById("pin")
+    if (pin=1234) {
+        document.getElementById("redirect").action="./correct pin.html";
+    }
+    else{
+        document.getElementById("redirect").action ="./incorrect pin.html";
+    }
+</script>
+</html>
