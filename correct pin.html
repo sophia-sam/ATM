@@ -6,34 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+  a{ height:35px;font-size:20px;background-color:cyan;border:none;width=100px}
+</style>
 <body>
     <center>
         <p style="font-size: 50px;">WELCOME</p>
         <div style="font-size :30px;">
+            <p>click</p>
         <P>1=cancel</P>
         <p>2=withdraw</p>
         <p>3=deposit</p>
         </div>
-        <form action="./incorrect pin.html" method="post" id="option">
-    <input style="height:35px;font-size:20px;background-color:cyan;border:none;width:300px" id="no" type="number" placeholder="Input option"><br>
-    <submit>submit</submit>
-    <input type="submit" value="submit">
-       </form>
+       <a href="./cancel.html">1</a>
+       <a href="./atm withdrawal.html">2</a>
+       <a href="./deposit.html">3</a>
     </center>
 </body>
-<script>
-    var no =document.getElementById("no")
-   if (no=1) {
-     document.getElementById("option").action="./cancel.html"
-   }
-   else if(no=2){
-    document.getElementById("option").action="./atm withdrawal.html"
-   }
-   else if (no=3) {
-    document.getElementById("option").action="./deposit.html"
-   }
-   else{
-    document.getElementById("option").action="./cancel.html"
-   }
-</script>
 </html>>
