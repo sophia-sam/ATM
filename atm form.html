@@ -4,14 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ATM FORM</title>
+    <style>
+        body{
+      background-color: black;
+      padding-top:20% ;
+        }
+        #submit{
+            border-radius: 8px;
+            background-color: rgb(255, 192, 252);
+        }
+        submit{
+            color: green;
+        }
+    </style>
 </head>
 <body>
+    <center>
     <form action="./atm withdrawal.html" id="redirect" method="post">
-    <input style="height:35px;font-size:20px;background-color:cyan;border:none;width:300px" id="pin" type="number" placeholder="Input pin"><br>
-    <submit>submit</submit><br>
-    <input type="submit" value="SUBMIT">
- </form> 
+    <input style="height:35px;font-size:20px;background-color:cyan;border:none;width:300px" id="pin" type="number" placeholder="Input pin" min="4"><br>
+    <submit>submit password</submit><br>
+    <input type="submit" value="SUBMIT" id="submit">
+    
+ </form>
+</center>
 </body>
 <script>
     var pin=document.getElementById("pin")

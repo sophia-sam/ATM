@@ -4,17 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WITHDRAW</title>
 </head>
 <body style="text-transform: uppercase;">
     <style >
         .atm{
             background-image: url(./../../GitHub/javascript/pic.jfif);
             align-items: center;
+		}
+		#b2 button{
+            background-color: aqua;
+            width: 50%;
+            border-radius: 12px;
+       }
+       button a{
+        text-decoration: none;
+        font-size: 20px;
+        color: red;
+       }
     </style>
     <center>
  <section  class="atm" style="background-size:100%;height:1000px">
 <div class="container-fluid" style="background-color:rgba(0,0,0,.6);height:1000px">
+	<button id="b2"> <a href="./atm form.html">Click to go back</a></button>
 	<div class="row">
 		<div>
 			<h2 style="font-size: 50px;">Make cash widthdraw</h2><br />
@@ -34,7 +46,6 @@
 </center>
     <script>
         function cash(){
-	 <!-- alert("hello"); -->
 
 var j=document.getElementById("amount").value;
 if(j<100){
@@ -53,6 +64,7 @@ else{
 	document.getElementById("with").innerHTML="sorry your account has insufficient balance";
 		document.getElementById("change").src="https://voicesofglass.files.wordpress.com/2012/01/atminsuff.png";
 }
+alert(`you have withdrawn $${j} from your account`)
 }
  </script>
     
