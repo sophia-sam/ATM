@@ -55,16 +55,18 @@ if(j<100){
 else if(j<500){
 	document.getElementById("with").innerHTML="take your cash ";
 	document.getElementById("change").src="https://nmgprod.s3.amazonaws.com/media/files/45/08/45088d4862f2aa7405bd4d5bc227bb21/cover_image_1591366688.jpg.760x400_q85_crop_upscale.jpg";
+    alert(`you have withdrawn $${j} from your account`)
 }
 else if(j<2000){
 	document.getElementById("with").innerHTML="take your cash";
 	document.getElementById("change").src="https://s31898.pcdn.co/wp-content/uploads/2019/07/Avail-instant-cash-e1562665351818-800x430.jpg";
+    alert(`you have withdrawn $${j} from your account`)
 }
 else{
 	document.getElementById("with").innerHTML="sorry your account has insufficient balance";
-		document.getElementById("change").src="https://voicesofglass.files.wordpress.com/2012/01/atminsuff.png";
+	document.getElementById("change").src="https://voicesofglass.files.wordpress.com/2012/01/atminsuff.png";
+    alert(`$${j} could not be withdrawn from your account`)
 }
-alert(`you have withdrawn $${j} from your account`)
 }
  </script>
     
