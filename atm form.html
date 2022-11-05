@@ -22,7 +22,7 @@
 <body>
     <center>
     <form action="./atm withdrawal.html" id="redirect" method="post">
-    <input style="height:35px;font-size:20px;background-color:cyan;border:none;width:300px" id="pin" type="number" placeholder="Input pin" min="4"><br>
+    <input style="height:35px;font-size:20px;background-color:cyan;border:none;width:300px" id="pin" type="number" placeholder="Input pin" min="4" onclick="cash()"><br>
     <submit>submit password</submit><br>
     <input type="submit" value="SUBMIT" id="submit">
     
@@ -30,12 +30,14 @@
 </center>
 </body>
 <script>
+    function cash() {
     var pin=document.getElementById("pin")
     if (pin=1234) {
         document.getElementById("redirect").action="./correct pin.html";
     }
-    else{
+    else {
         document.getElementById("redirect").action ="./incorrect pin.html";
     }
+}
 </script>
 </html>
